@@ -30,6 +30,7 @@ public class Grapple : MonoBehaviour
                 Debug.Log("Shoot");
                 distJoint.enabled = true;
                 distJoint.connectedBody = grapSurface[0].transform.GetComponent<Rigidbody2D>();
+                Debug.DrawLine(transform.position, distJoint.transform.position, Color.black);
 
                 if (transform.position.x < grapSurface[0].transform.position.x)
                 {

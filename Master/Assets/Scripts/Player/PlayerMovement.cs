@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
                     SetHorizontalVelocity(10f);
                 }
             }
-            else
+            else if (!isOnWall)
             {
                 //Déplacement
                 Move();
@@ -111,11 +111,11 @@ public class PlayerMovement : MonoBehaviour
         //Si l'avatar va vers la gauche, on flip l'avatar horizontalement
         if (rb.velocity.x < 0)
         {
-            transform.localScale = new Vector3(-10f, 10f);
+            transform.localScale = new Vector3(-1f, 1f);
         }
         else if (rb.velocity.x > 0)
         {
-            transform.localScale = new Vector3(10f, 10f);
+            transform.localScale = new Vector3(1f, 1f);
         }
     }
 
