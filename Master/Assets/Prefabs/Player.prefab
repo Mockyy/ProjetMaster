@@ -40,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5564163969560038848}
   - component: {fileID: 5564163969560038849}
+  - component: {fileID: 5958193344674993501}
   - component: {fileID: 5564163969560038850}
   - component: {fileID: 5564163969560038876}
   - component: {fileID: 5564163969560038851}
@@ -119,6 +120,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5958193344674993501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5564163969560038854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed407b236f2ccab4b935d1f7147d30a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5564163969560038850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +239,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 5.390009
+  m_Distance: 5.495862
   m_MaxDistanceOnly: 0
 --- !u!1 &5564163969780593113
 GameObject:

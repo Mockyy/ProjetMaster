@@ -124,7 +124,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(input, rb.velocity.y);
     }
 
-    private void Jump()
+    public void Jump()
     {
         resetVelocity();   //Avant de sauter on reset la vélocité de l'avatar
         rb.AddForce(Vector2.up * jumpForce);   //Application de la force
@@ -149,4 +149,15 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawSphere(groundCheckPoint.position, .2f);
         Gizmos.DrawSphere(wallCheckPoint.position, .2f);
     }
+
+    public int GetJumpsLeft()
+    {
+        return jumpsLeft;
+    }
+
+    public bool GetGrounded()
+    {
+        return isGrounded;
+    }
+
 }
